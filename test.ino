@@ -5,7 +5,7 @@
 #define PIN_BTN1      5
 #define PIN_BTN2      10
 #define PIN_TRESHOLD  2
-#define PIN_MIC       A6
+#define PIN_MIC       A7
 #define PIN_LED       6
 #define NUM_LED       5
 
