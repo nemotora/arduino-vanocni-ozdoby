@@ -1,9 +1,9 @@
 # arduino-vanocni-ozdoby
 
-'#define PIN_BZUCAK      3
-#define PIN_TLACITKO1   5
-#define BTN_TLACITKO2   10
-#define PIN_TLESKNUTI   2
-#define PIN_MIKROFON    A7
-#define PIN_SVETYLKA    6
-#define POCET_SVETYLEK  5'
+|PIN_BZUCAK      |3|
+|PIN_TLACITKO1   |5|
+|BTN_TLACITKO2   |10|
+|PIN_TLESKNUTI   |2|
+|PIN_MIKROFON    |A7|
+|PIN_SVETYLKA    |6|
+|POCET_SVETYLEK  |5|
