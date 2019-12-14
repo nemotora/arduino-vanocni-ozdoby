@@ -6,6 +6,7 @@
 Adafruit_NeoPixel svetylka(POCET_LED, PIN_LED, NEO_RGB + NEO_KHZ800);
 
 byte cervena = 0;
+byte rezim = 0;
 
 void setup() {
   svetylka.begin();
@@ -15,13 +16,15 @@ void setup() {
 }
 
 void loop() {
-  /*
-  svetylka.fill(svetylka.Color(cervena, 52, 189));
-  svetylka.show();
-  cervena = cervena + 1;
-  delay(20);
-  */
-  svetylka.fill(svetylka.Color(random(255), random(255), random(255)));
-  svetylka.show();
-  delay(100);
+  if (rezim == 1) {
+    svetylka.fill(svetylka.Color(cervena, 52, 189));
+    svetylka.show();
+    cervena = cervena + 1;
+    delay(20);
+  }
+  if (rezim == 2) {
+    svetylka.fill(svetylka.Color(random(255), random(255), random(255)));
+    svetylka.show();
+    delay(100);
+  }
 }
