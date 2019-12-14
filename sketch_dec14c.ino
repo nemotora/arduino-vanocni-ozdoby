@@ -19,6 +19,11 @@ void setup() {
 }
 
 void loop() {
+  tlacitko1.update();
+  if (rezim == 0) {
+    svetylka.clear();
+    svetylka.show();
+  }
   if (rezim == 1) {
     svetylka.fill(svetylka.Color(cervena, 52, 189));
     svetylka.show();
@@ -35,5 +40,8 @@ void loop() {
 void tlacitko1Stisknuto(int stav) {
   if (!stav) {
     rezim++;
+    if (rezim > 2) {
+      rezim = 0;
+    }
   }
 }
